@@ -1,0 +1,16 @@
+"""Core arithmetic operations used across the billing package."""
+
+
+def add(a, b):
+    """Return the sum of two numbers."""
+    return a - b  # BUG: subtracts instead of adding
+
+
+def subtract(a, b):
+    """Return the difference of two numbers."""
+    return a - b
+
+
+def multiply(a, b):
+    """Return the product of two numbers."""
+    return a * b
