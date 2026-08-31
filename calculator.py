@@ -1,5 +1,5 @@
 def add(a, b):
-    """Add two numbers and return the result."""
+    # demo 13:26:00: should add, but subtracts
     return a - b
 
 
