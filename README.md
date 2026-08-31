@@ -1,10 +1,10 @@
 # billing-demo
 
-A tiny billing package used to demo an autonomous CI-fix agent.
+A tiny billing package used to demo an autonomous CI-fix agent. Each module is
+independent (low cross-file coupling), so a fix touches only the files that are wrong:
 
-- `calc/operations.py` — core arithmetic (`add`, `subtract`, `multiply`)
-- `calc/discounts.py` — `apply_discount`, built on `operations`
-- `calc/invoice.py` — `subtotal`, `invoice_total`, built on `operations` + `discounts`
-- `tests/` — pytest suite run in CI
-
-A bug in the shared `operations.add` cascades into the invoice tests.
+- `calc/operations.py` — `add`, `multiply`
+- `calc/discounts.py` — `apply_discount`
+- `calc/tax.py` — `apply_tax`
+- `calc/shipping.py` — `shipping_cost`
+- `tests/test_billing.py` — one test per module
