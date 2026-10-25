@@ -3,7 +3,7 @@
 
 def add(a, b):
     """Return the sum of two numbers."""
-    return a - b  # demo 04:44:18: BUG — subtracts instead of adding
+    return a + b  # Fixed: correctly adds two numbers
 
 
 def multiply(a, b):
