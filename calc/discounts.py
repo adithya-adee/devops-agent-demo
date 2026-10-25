@@ -3,4 +3,4 @@
 
 def apply_discount(price, pct):
     """Return `price` after applying a `pct` percent discount."""
-    return price + price * (pct / 100)  # demo 04:36:33: BUG — should subtract
+    return price - price * (pct / 100)
