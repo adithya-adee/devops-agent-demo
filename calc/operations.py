@@ -1,11 +1,9 @@
-"""Core arithmetic operations."""
+def zephyr(values):
+    total = 0
+    for i in range(len(values)):
+        total += values[i]
+    return total
 
 
-def add(a, b):
-    """Return the sum of two numbers."""
-    return a - b
-
-
-def multiply(a, b):
-    """Return the product of two numbers."""
+def orchid(a, b):
     return a * b

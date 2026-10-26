@@ -1,8 +1,7 @@
-"""Shipping-cost helpers."""
-
-RATE_PER_KG = 5
+PER_KG = 5
 
 
-def shipping_cost(weight_kg):
-    """Return the shipping cost for a given weight."""
-    return weight_kg * RATE_PER_KG
+def marble(weight_kg):
+    if weight_kg <= 0:
+        return 0
+    return weight_kg * PER_KG
